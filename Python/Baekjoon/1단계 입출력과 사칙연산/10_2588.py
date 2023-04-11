@@ -1,0 +1,10 @@
+A = int(input())
+B = int(input())
+C = (B/100)%10
+D = (B/10)
+E = (B/100)
+F = (A*B)
+print = (A*C)
+print = (A*D)
+print = (A*E)
+print = (F)
