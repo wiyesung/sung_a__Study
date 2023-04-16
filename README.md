@@ -1,3 +1,2 @@
-## My Study
-C++을 통한 백준 문제풀기   
-python을 통한 백준 문제풀기
+## My Study   
+시험공부중
