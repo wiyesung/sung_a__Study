@@ -1,15 +1,28 @@
 #include <iostream>
-#include <string>
+#include <fstream>
 using namespace std;
+
 int main() {
-    string song("Falling in love with you");
-    string answer("Elvis presley");
-    string singer;
-    cout << song + "를 부른 가수는 (힌트 : 첫 글자는" << answer[0] << ")?";
-    getline(cin, singer);
-    if(answer == singer){
-        cout << "맞았습니다";
+    char name[10], dept[20];
+    int sid;
+
+    cout << "이름>>";
+    cin >> name;
+    cout << "학번(숫자로)";
+    cin >> sid;
+    cout << "학과>>";
+    cin >> dept;
+
+    ofstream fout;
+    fout.open("c:\\temp\\student.txt");
+    if(!fout) {
+        cout << "c:\\temp\\student.txt 파일을 열 수 없다.";
+        return 0;
     }
-    else
-        cout << "틀렸습니다" << answer << "입니다.";
+
+    fout << name << endl;
+    fout << sid << endl;
+    fout << dept << endl;
+
+    fout.close();
 }
