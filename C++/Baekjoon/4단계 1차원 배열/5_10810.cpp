@@ -6,12 +6,12 @@ int main() {
     cin >> N;
     int M;
     cin >> M;
-    int i=0, j=0, k=0;
-    int ba[]={0, 0, 0, 0, 0};
-    for(int a=1; a<=M; a++){
+    int i, j, k;
+    int ba[101]={0};
+    while (M--) {
         cin >> i >> j >> k;
-        for(int b=i; b<=j; b++){
-            ba[b-1]=k;
+        for(int a=i; a<=j; a++){
+            ba[a-1] = k;
         }
     }
     for(int a=0; a<5; a++){

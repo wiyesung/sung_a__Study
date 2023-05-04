@@ -8,7 +8,7 @@ int main() {
     ofstream fb("b.txt");
 
     if(!fa || !fb){
-        cout << "파일 열기 실패";
+        cerr << "파일 열기 실패";
         return 1;
     }
     
