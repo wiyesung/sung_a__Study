@@ -28,6 +28,7 @@ int main() {
 
         copy(aa, aa+N, bb);
     }
+    
     for(int a=0; a<N; a++) {
         cout << aa[a] << " ";
     }

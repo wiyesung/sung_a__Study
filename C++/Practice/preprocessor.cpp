@@ -1,13 +1,24 @@
 #include <iostream>
-
-#include "preprocessor.h"
-#include "preprocessor.h"
-
-#define ABC 5
+#include <string>
+using namespace std;
 
 int main() {
-    #if 1
-    printf("hello, World!!! = %d, %d\n", ABC, wicked);
-    #endif
-    printf("wicked\n");
+    int T;
+    cin >> T;
+
+    for (int i = 0; i < T; i++) {
+        int R;
+        string S;
+        cin >> R >> S;
+
+        for (int j = 0; j < S.length(); j++) {
+            for (int k = 0; k < R; k++) {
+                cout << S[j];
+            }
+        }
+
+        cout << endl;
+    }
+
+    return 0;
 }
